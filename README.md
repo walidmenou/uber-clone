@@ -1,50 +1,62 @@
-# Welcome to your Expo app 👋
+# React Native Uber Clone 🚗
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A modern mobile application built with React Native and Expo, featuring a sleek user interface and smooth user experience similar to Uber.
 
-## Get started
+## Features ✨
 
-1. Install dependencies
+- **User Authentication** with Clerk
+- **Custom Onboarding Flow**
+- **OAuth Integration** (Google Sign-in)
+- **Real-time Location Services**
+- **Interactive Map Interface**
+- **Ride History**
+- **Profile Management**
+- **Chat System**
+- **Responsive Design**
 
-   ```bash
-   npm install
-   ```
+## Tech Stack 🛠️
 
-2. Start the app
+- [React Native](https://reactnative.dev/) - Mobile framework
+- [Expo](https://expo.dev/) - Development platform
+- [Clerk](https://clerk.dev/) - Authentication
+- [NativeWind](https://www.nativewind.dev/) - Styling
+- [Expo Router](https://docs.expo.dev/routing/introduction/) - Navigation
+- React Native Maps - Map integration
+- TypeScript - Type safety
 
-   ```bash
-    npx expo start
-   ```
+## Getting Started 🚀
 
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
+1. Clone the repository
 ```bash
-npm run reset-project
+git clone https://github.com/yourusername/uber-clone.git
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+2. Install dependencies
+```bash
+cd uber-clone
+npm install
+```
 
-## Learn more
+3. Set up environment variables
+   Create a `.env` file in the root directory and add:
+```env
+EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_key
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+4. Start the development server
+```bash
+npm start
+```
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## Project Structure 📁
 
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+```
+uber-clone/
+├── app/                   # Application screens
+│   ├── (auth)/           # Authentication screens
+│   └── (root)/           # Main app screens
+├── assets/               # Images, fonts, and icons
+├── components/           # Reusable components
+├── constants/            # App constants
+└── types/                # TypeScript types
+```
