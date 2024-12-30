@@ -28,7 +28,7 @@ A modern mobile application built with React Native and Expo, featuring a sleek 
 
 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/uber-clone.git
+git clone https://github.com/walidmenou/uber-clone.git
 ```
 
 2. Install dependencies
